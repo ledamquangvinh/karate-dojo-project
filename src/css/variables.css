@@ -1,0 +1,26 @@
+:root{
+  /* brand */
+  --color-sumi-ink: #1B1A17;
+  --color-dojo-red: #A4161A;
+  --color-red-hover: #7A0F12;
+  --color-washi-paper: #F6F2EA;
+  --color-card-surface: #FFFDF8;
+  --color-today-tint: #FBF4EC;
+
+  /* Neutral */
+  --color-white: #FFFFFF;
+  --color-text-body: #3B3833;
+  --color-text-muted: #5E5A52;
+  --color-text-subtle: #6E695F;
+  --color-on-dark: #d9d1c2;
+  --color-border-strong: #CFC5B3;
+  --color-border: #DDD5C6;
+  --color-divider: #E7E0D2;
+
+  /* Session type */
+  --color-kihon: #2F4B8A;
+  --color-kata: #A4161A;
+  --color-cardio-strength: #7A4F0E;
+  --color-sparring: #245A4E;
+  --color-strength: #F6F2EA;
+}

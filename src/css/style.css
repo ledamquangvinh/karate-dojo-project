@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: #1b1a17;
+  position: relative;
+  height: 80px;
+  border-bottom: 5px solid var(--color-dojo-red);
+}
+
+header i {
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header h1 {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.main-body {
+  background-color: #f3eee4;
+  padding: 30px 20px 40px;
+  min-height: 100vh;
+}
+
+.body-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title p {
+  color: var(--color-dojo-red);
+}
+
+.title h1 {
+  color: var(--color-sumi-ink);
+}
+
+.body-head button {
+  border-radius: 5px;
+  width: 35px;
+  height: 35px;
+  border: 0.5px solid var(--color-border);
+  background-color: var(--color-card-surface);
+}
+
+.body-head p {
+  margin: 0 20px;
+}
+
+.date-bar {
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+}
+
+.filter button {
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  background-color: var(--color-card-surface);
+}
+
+.calender {
+  background-color: #fffdf8;
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+}
+
+.calender-date {
+  display: flex;
+  align-items: center;
+}
+
+.calender .lesson {
+  margin: 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  padding: 10px;
+}
