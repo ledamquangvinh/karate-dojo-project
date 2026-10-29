@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/variables.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <i class="fa fa-bars"></i>
+      <h1>[Dojo Name]</h1>
+    </header>
+
+    <!-- Body -->
+    <div class="edit-body">
+      <a class="edit-link" href="./index.html">Back to schedule</a>
+
+      <div class="edit-body-header">
+        <div class="edit-title">
+          <p>ADMIN * EDIT SESSION</p>
+          <h1>New Session</h1>
+        </div>
+        <p>DRAFT-NOT PUBLISHED</p>
+      </div>
+
+      <!-- Session init card -->
+      <form class="session-cards">
+        <section class="session-card">
+          <div class="card-title">
+            <h3>1</h3>
+            <h3>Session type</h3>
+          </div>
+
+          <div class="session-types">
+            <label for="session-type">
+              <input type="radio" name="session-type" id="" value="kihon" />
+              <div>
+                <span>Kihon</span>
+                <p>Up to 5 techniques</p>
+              </div>
+            </label>
+
+            <label class="session-type">
+              <input type="radio" name="session-type" value="kata" />
+
+              <div>
+                <span>Kata</span>
+                <p>One kata, demonstration + bunkai</p>
+              </div>
+            </label>
+
+            <label class="session-type">
+              <input type="radio" name="session-type" value="cardio" />
+
+              <div>
+                <span>Cardio & Strength</span>
+                <p>Several exercises, mix cardio & strength</p>
+              </div>
+            </label>
+
+            <label class="session-type">
+              <input type="radio" name="session-type" value="sparring" />
+
+              <div>
+                <span>Sparring</span>
+
+                <p>Up to 3 purposes and a duration</p>
+              </div>
+            </label>
+          </div>
+        </section>
+
+        <section class="session-card">
+          <div class="card-title">
+            <h3>2</h3>
+            <h3>Title & time</h3>
+          </div>
+          <div>
+            <label for="session-title">Session title</label>
+            <input type="text" placeholder="e.g Stances, blocks & punches" id="session-title"/>
+            <div class="">
+              <label for="session-date">Dates</label>
+              <input type="date" name="" id="session-date">
+
+              <label for="session-hour-start">Start</label>
+              <input type="time" name="" id="session-hour-start">
+
+              <label for="session-hour-end">Start</label>
+              <input type="time" name="" id="session-hour-end">
+            </div>
+          </div>
+        </section>
+
+        <section class="session-card">
+          <h3>Content</h3>
+          <p>Nothing here yet, choose a session type above. Its field will appear here.</p>
+          <div class="technique">
+            <label for="technique"></label>
+            <input type="text" name="" id="technique">
+            <button>Remove</button>
+          </div>
+          
+          <button>Add Content</button>
+        </section>
+
+        <section class="session-card">
+          <div class="card-title">
+            <h3>4</h3>
+            <h3>Taught by</h3>
+          </div>
+          <label for="session-sensei">Sensei</label>
+          <select name="senseis" id="session-sensei">
+            <option value="Vinh">Sensei Vinh</option>
+            <option value="Nghia">Sensei Nghia</option>
+            <option value="Vu">Sensei Vu</option>
+
+          </select>
+        </section>
+      </form>
+
+      <!-- Save/cancel buttons -->
+      <div class="">
+        <button>Cancel</button>
+        <button>Save Session</button>
+      </div>
+    </div>
+  </body>
+</html>

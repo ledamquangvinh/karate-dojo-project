@@ -5,6 +5,7 @@
 body {
   margin: 0;
   min-height: 100vh;
+  background-color: #f3eee4;
 }
 
 header {
@@ -30,10 +31,17 @@ header h1 {
   transform: translateX(-50%);
 }
 
+/* HOME PAGE */
+
 .main-body {
   background-color: #f3eee4;
   padding: 30px 20px 40px;
   min-height: 100vh;
+}
+
+.main-body a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .body-head {
@@ -100,3 +108,41 @@ header h1 {
   border-radius: 10px;
   padding: 10px;
 }
+
+/* EDIT PAGE */
+.edit-body {
+  margin: 30px 100px;
+}
+
+.edit-link {
+  margin: 30px 0; 
+  color: var(--color-dojo-red);
+}
+
+.edit-body-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto;
+  align-items: flex-start;
+}
+
+.edit-body-header > p {
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  align-self: flex-start;
+  padding: 10px;
+  color: var(--color-text-muted);
+  font-size: 0.5rem
+}
+
+.session-card {
+  background-color: var(--color-card-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 15px;
+  padding: 10px;
+  margin: 20px 0;
+
+}
+
+
+
