@@ -31,7 +31,7 @@
       </div>
 
       <!-- Session init card -->
-      <form class="session-cards">
+      <form type="submit" class="session-cards">
         <section class="session-card">
           <div class="card-title">
             <h3>1</h3>
@@ -84,30 +84,33 @@
           </div>
           <div>
             <label for="session-title">Session title</label>
-            <input type="text" placeholder="e.g Stances, blocks & punches" id="session-title"/>
+            <input
+              type="text"
+              placeholder="e.g Stances, blocks & punches"
+              id="session-title"
+            />
             <div class="">
               <label for="session-date">Dates</label>
-              <input type="date" name="" id="session-date">
+              <input type="date" name="" id="session-date" readonly />
 
               <label for="session-hour-start">Start</label>
-              <input type="time" name="" id="session-hour-start">
+              <input type="time" name="" id="session-hour-start" />
 
-              <label for="session-hour-end">Start</label>
-              <input type="time" name="" id="session-hour-end">
+              <label for="session-hour-end">End</label>
+              <input type="time" name="" id="session-hour-end" />
             </div>
           </div>
         </section>
 
         <section class="session-card">
           <h3>Content</h3>
-          <p>Nothing here yet, choose a session type above. Its field will appear here.</p>
-          <div class="technique">
-            <label for="technique"></label>
-            <input type="text" name="" id="technique">
-            <button>Remove</button>
-          </div>
-          
-          <button>Add Content</button>
+          <p>
+            Nothing here yet, choose a session type above. Its field will appear
+            here.
+          </p>
+          <div class="techniques"></div>
+
+          <button type="button" id="add-technique">Add Content</button>
         </section>
 
         <section class="session-card">
@@ -120,16 +123,16 @@
             <option value="Vinh">Sensei Vinh</option>
             <option value="Nghia">Sensei Nghia</option>
             <option value="Vu">Sensei Vu</option>
-
           </select>
         </section>
-      </form>
 
-      <!-- Save/cancel buttons -->
-      <div class="">
-        <button>Cancel</button>
-        <button>Save Session</button>
-      </div>
+        <!-- Save/cancel buttons -->
+        <div class="">
+          <button>Cancel</button>
+          <button type="submit" id="btn-edit-submit">Save Session</button>
+        </div>
+      </form>
     </div>
   </body>
+  <script src="../js/script.js"></script>
 </html>
